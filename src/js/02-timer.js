@@ -19,7 +19,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] < new Date()) {
-      Notiflix.Notify.failure('Будь ласка виберить майбутню дату');
+      Notiflix.Notify.failure('Please choose a date in the future');
       btnStart.disabled = true;
     } else {
       btnStart.disabled = false;
